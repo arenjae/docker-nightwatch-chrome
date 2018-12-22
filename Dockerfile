@@ -87,7 +87,5 @@ rm /tmp/chromedriver_linux64.zip && \
 chmod +x /opt/chromedriver-$CHROMEDRIVER_VERSION/chromedriver && \
 ln -fs /opt/chromedriver-$CHROMEDRIVER_VERSION/chromedriver /usr/local/bin/chromedriver
 
-EXPOSE 4444
-
 CMD ["/bin/sh"]
 ENTRYPOINT []
