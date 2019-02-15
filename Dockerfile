@@ -79,7 +79,7 @@ rm -rf /var/lib/apt/lists/*
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 RUN apt-get install -y --no-install-recommends nodejs
 
-RUN CHROMEDRIVER_VERSION=`curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE` && \
+RUN CHROMEDRIVER_VERSION=2.46 && \
 mkdir -p /opt/chromedriver-$CHROMEDRIVER_VERSION && \
 curl -sS -o /tmp/chromedriver_linux64.zip http://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip && \
 unzip -qq /tmp/chromedriver_linux64.zip -d /opt/chromedriver-$CHROMEDRIVER_VERSION && \
