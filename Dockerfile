@@ -76,7 +76,7 @@ apt-get install -y --no-install-recommends google-chrome-stable && \
 rm -rf /var/lib/apt/lists/*
 
 #Install nodejs
-RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
 RUN apt-get install -y --no-install-recommends nodejs
 
 RUN CHROMEDRIVER_VERSION=2.46 && \
